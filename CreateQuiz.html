@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Publish New Quizz</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="validation.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../images/cover.jpg" alt="" width=100% height=100% position=relative>
+        <div class="centered">
+            <div class="header">
+                <h2>Create Quizz</h2>
+            </div>
+
+            <form name="form1" method="POST" action="http://127.0.0.1:5000/CreateQuiz" onsubmit = "return (validate1())">
+
+                <div class="input-group">
+                    <label>Quiz Title</label>
+                    <input type="text" name="title">
+                </div>
+                <div class="input-group">
+                    <label>Score</label>
+                    <input type="number" name="score">
+                </div>
+
+                <div class="input-group">
+                    <label>Pass Score</label>
+                    <input type="number" name="passScore">
+                </div>
+                <div class="input-group">
+                    <label>Quiz Type</label><br>
+                    <input type="radio" name="qType" value="OOP"> OOP
+                    <input type="radio" name="qType" value="Web Develope"> Web Develope<br>
+                    <input type="radio" name="qType" value="Web Desing"> Web Desing
+                    <input type="radio" name="qType" value="Andrid Develope"> Andrid Develope<br>
+                    <input type="radio" name="qType" value="IOS Develop"> IOS Develop
+                    <input type="radio" name="qType" value="JAVA"> JAVA<br>
+                    <input type="radio" name="qType" value="C++/C"> C++/C
+                    <input type="radio" name="qType" value="C#"> C#<br>
+                    <input type="radio" name="qType" value="Kotlin"> Kotlin
+                    <input type="radio" name="qType" value="Data Analysis"> Data Analysis<br>
+
+                </div>
+
+                <div class="input-group">
+                    <label>Duration </label>
+                    <input type="number" name="duration">
+                    <label> mins </label>
+                </div><br><br><br>
+                <div class="input-group">
+                    <label>Question 1</label>
+                    <input type="text" name="q1">
+                </div> <br>
+                <div>
+                    <label>Choice 1 </label>
+                    <input type="text" name="choice11"> <br>
+
+                    <label>Choice 2 </label>
+                    <input type="text" name="choice12"> <br>
+
+                    <label>Choice 3 </label>
+                    <input type="text" name="choice13"> <br>
+
+                    <label>Choice 4 </label>
+                    <input type="text" name="choice14"> <br>
+                <div class="input-group"> <label>Answer </label><br>
+                    <input type="radio" name="q1answer" value="Choice11"> Choice1
+                    <input type="radio" name="q1answer" value="Choice12"> Choice2
+                    <input type="radio" name="q1answer" value="Choice13"> Choice3
+                    <input type="radio" name="q1answer" value="Choice14"> Choice4
+                </div>
+                </div><br><br><br>
+
+                <div class="input-group">
+                    <label>Question 2</label>
+                    <input type="text" name="q2">
+                </div> <br>
+                <div>
+                    <label>Choice 1 </label>
+                    <input type="text" name="choice21"> <br>
+
+                    <label>Choice 2 </label>
+                    <input type="text" name="choice22"> <br>
+
+                    <label>Choice 3 </label>
+                    <input type="text" name="choice23"> <br>
+
+                    <label>Choice 4 </label>
+                    <input type="text" name="choice24"> <br>
+                    
+                    <label>Answer </label><br>
+                    <input type="radio" name="q2answer" value="Choice21"> Choice1
+                    <input type="radio" name="q2answer" value="Choice22"> Choice2
+                    <input type="radio" name="q2answer" value="Choice23"> Choice3
+                    <input type="radio" name="q2answer" value="Choice24"> Choice4
+                </div><br><br><br>
+                <div class="input-group">
+                    <label>Question 3</label>
+                    <input type="text" name="q3">
+                </div> <br>
+                <div>
+                    <label>Choice 1 </label>
+                    <input type="text" name="choice31"> <br>
+
+                    <label>Choice 2 </label>
+                    <input type="text" name="choice32"> <br>
+
+                    <label>Choice 3 </label>
+                    <input type="text" name="choice33"> <br>
+
+                    <label>Choice 4 </label>
+                    <input type="text" name="choice34"> <br>
+                    
+                    <label>Answer </label><br>
+                    <input type="radio" name="q3answer" value="Choice31"> Choice1
+                    <input type="radio" name="q3answer" value="Choice32"> Choice2
+                    <input type="radio" name="q3answer" value="Choice33"> Choice3
+                    <input type="radio" name="q3answer" value="Choice34"> Choice4
+                </div><br><br><br>
+
+                <div class="input-group">
+                    <label>Question 4</label>
+                    <input type="text" name="q4">
+                </div> <br>
+                <div>
+                    <label>Choice 1 </label>
+                    <input type="text" name="choice41"> <br>
+
+                    <label>Choice 2 </label>
+                    <input type="text" name="choice42"> <br>
+
+                    <label>Choice 3 </label>
+                    <input type="text" name="choice43"> <br>
+
+                    <label>Choice 4 </label>
+                    <input type="text" name="choice44"> <br>
+
+                    <label>Answer </label><br>
+                    <input type="radio" name="q4answer" value="Choice41"> Choice1
+                    <input type="radio" name="q4answer" value="Choice42"> Choice2
+                    <input type="radio" name="q4answer" value="Choice43"> Choice3
+                    <input type="radio" name="q4answer" value="Choice44"> Choice4
+                </div><br><br><br>
+
+
+                <div class="input-group">
+                    <label>Question 5</label>
+                    <input type="text" name="q5">
+                </div> <br>
+                <div>
+                    <label>Choice 1 </label>
+                    <input type="text" name="choice51"> <br>
+
+                    <label>Choice 2 </label>
+                    <input type="text" name="choice52"> <br>
+
+                    <label>Choice 3 </label>
+                    <input type="text" name="choice53"> <br>
+
+                    <label>Choice 4 </label>
+                    <input type="text" name="choice54"> <br>
+                    <label>Answer </label><br>
+                    <input type="radio" name="q5answer" value="Choice51"> Choice1
+                    <input type="radio" name="q5answer" value="Choice52"> Choice2
+                    <input type="radio" name="q5answer" value="Choice53"> Choice3
+                    <input type="radio" name="q5answer" value="Choice54"> Choice4
+                </div><br><br><br>
+                <div class="input-group">
+                    <button type="submit" name="createQuiz" class="btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
